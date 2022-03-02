@@ -1,7 +1,7 @@
-import renderNavbar from "./navbar.js";
-import renderHomePage from "./home.js";
-import renderMenuPage from "./menu.js";
-import renderContactPage from "./contact.js";
+import renderNavbar from "./modules/navbar.js";
+import renderHomePage from "./modules/home.js";
+import renderMenuPage from "./modules/menu.js";
+import renderContactPage from "./modules/contact.js";
 
 renderNavbar();
 renderHomePage();
