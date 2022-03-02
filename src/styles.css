@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Architext";
+  src: url(./fonts/Architex.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+  --font-title: "Architext", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +22,30 @@ body {
   box-sizing: border-box;
 }
 
+nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: transparent;
+  margin: 0 1em;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-family: var(--font-body);
+}
+
 #content {
   width: 100%;
   height: 100vh;
@@ -14,15 +53,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, #00000011 0%, #00000011 100%),
+    url(./images/background.jpg) center/cover fixed;
 }
-
-nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .title {
-  color: red;
+  margin: 0;
+  font-size: 8rem;
+  color: white;
+  font-family: var(--font-title);
+}
+
+.caption {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: var(--font-body);
+  text-transform: capitalize;
 }
