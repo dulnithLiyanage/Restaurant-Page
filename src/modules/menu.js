@@ -71,7 +71,7 @@ const foods = {
     title: "Lavariya",
     type: "Desserts",
     price: "Rs. 400",
-    description: "String hoppers filled with sweet pani pol and rolled up",
+    description: " Rolled up string hoppers filled with sweet pani pol ",
   },
 };
 
