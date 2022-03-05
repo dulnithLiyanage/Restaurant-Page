@@ -1,12 +1,11 @@
 import styles from "../styles.css";
-import background from "../images/background.jpg";
 
 const renderHomePage = () => {
   const restaurnatName = "Polsambolaya";
-
   const content = document.getElementById("content");
 
   content.innerHTML = "";
+  content.classList = "";
 
   const title = document.createElement("h1");
   const caption = document.createElement("p");
@@ -19,6 +18,7 @@ const renderHomePage = () => {
 
   content.appendChild(title);
   content.appendChild(caption);
+  content.classList.add("home");
 };
 
 export default renderHomePage;
